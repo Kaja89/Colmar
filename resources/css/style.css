@@ -1,15 +1,21 @@
 html{
   font-size: 16px;
+  color: dimgray;
 }
 
 body {
   position: relative;
+
+
 }
 /*global issues*/
 .flex {
   display: flex;
 }
 
+.mobile {
+  display: none
+}
 /*header*/
 header {
   box-sizing: border-box;
@@ -19,15 +25,17 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5rem;
-  border: solid black;
   position: fixed;
 }
 
 .logo {
   justify-content: flex-start;
   align-items: center;
-  border: solid black;
   height: 2em;
+}
+
+.logo span:nth-child(2){
+  font-weight: bold;
 }
 
 .logo img {
@@ -35,24 +43,37 @@ header {
 }
 
 nav {
-  border: solid black;
+
 }
 
 nav span {
   margin-right: 1rem;
 }
 
-/*banner*/
-.banner {
-  padding-top: rem;
-  background-color: lightgrey;
-  width: 100%;
-  height: 500px;
-  padding: 6rem 1.5rem 2rem 1.5rem;
+nav a {
+  text-decoration: none;
+  color: dimgray;
 }
 
-.banner img {
+nav a:hover {
+  color: #ff6600;
+  transition: color 0.3s ease-in;
+}
+
+/*banner*/
+.banner{
+  padding-top: rem;
+  background-color: lightgrey;
+  max-width: 100%;
+  height: 500px;
+  padding: 6rem 1.5rem 2rem 1.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.banner img{
   max-width: 60%;
+  height: auto;
 }
 
 .text {
@@ -75,4 +96,175 @@ nav span {
 .button {
   background-color: grey;
   padding: 1rem 5rem;
+  color: white;
+  border-radius: 3px;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button:hover {
+  background-color: #ff6600;
+  transition-property: background-color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+/*big-img section*/
+
+.hurt {
+padding: 2rem 0 2rem 1.5rem;
+max-width: 100%;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+.hurt h2 {
+font-size: 2.5rem;
+font-weight: bold;
+margin-top: 2rem;
+margin-bottom: 1.5rem;
+}
+
+.big-img {
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 60%;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+
+}
+
+.big-img img {
+width: 100%;
+}
+.big-img span {
+display: block;
+margin-top: 1rem;
+}
+
+.three-pictures {
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.text {
+  align-items: flex-start;
+  justify-content: center;
+  width: 65%;
+}
+
+.text a {
+  text-decoration: none;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.img-container{
+  width: 35%;
+  margin: 1rem; /*this is a little bit strange*/
+  }
+
+  .small:first-child {
+    margin-top: 0; /*why doesnt work*/
+  }
+
+.small {
+  border-radius: 3px;
+}
+
+.small img {
+  max-width: 100%;
+  height: auto;
+}
+
+.small:hover {
+  background-color: lightgray;
+  cursor: pointer;
+  transition: background-color 0.4s ease-out;
+}
+
+/*start learning section*/
+.learning-section h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 2rem 0;
+    background-color: lightgray;
+  }
+.start {
+  flex-wrap: wrap;
+  padding: 0 4.5rem;
+  box-sizing: border-box;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+
+.item {
+  max-width: 30%;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  background-color: white;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.item:nth-child(3n + 2) {
+  margin: 0 2rem 2rem;
+}
+
+.item h3 {
+  margin: 1rem;
+}
+
+.item h4 {
+  margin: 0.5rem 1rem;
+}
+
+.item p {
+  margin: 0 auto 1.5rem 1rem;
+}
+
+
+/*section with video*/
+.thesis {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.video {
+  max-width: 60%;
+  margin-left: 1.5rem;
+}
+video {
+  max-width: 100%;
+}
+.thesis h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.sides {
+  max-width: 40%;
+  margin-left: 1.5rem;
+}
+
+.side {
+
 }
