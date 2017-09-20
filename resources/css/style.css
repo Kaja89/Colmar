@@ -5,7 +5,8 @@
 body {
   position: relative;
   font-size: 16px;
-  color: dimgray;
+  font-family: "Exo";
+  color: #474747;
 }
 
 /*universal issues*/
@@ -37,8 +38,16 @@ body {
   flex-wrap: wrap;
 }
 
+.content-small h3 {
+  margin-bottom: 0.5rem;
+}
+
 .img-container{
   max-width: 35%;
+  }
+
+  p {
+    line-height: 150%;
   }
 
 /*header*/
@@ -275,6 +284,11 @@ footer {
     max-width: 100%;
   }
 
+  .button:active {
+    background-color: #e0ac04;
+    cursor: pointer;
+  }
+
   .text {
     margin: 2rem 1rem ;
     align-items: center;
@@ -342,6 +356,66 @@ footer {
 
   }
 
+/*start learning*/
+
+.learning-section h2 {
+  background-color: white;
+}
+
+.item {
+  margin: 0 0 0.5rem 0;
+  max-width: 100%;
+  background-color: #D3D3D3; /*lightgray*/
+  padding: 1rem 1rem;
+  border-radius: 5px;
+}
+
+.item:nth-child(3n + 2) {
+  margin: 0 0 0.5rem 0;
+}
+
+.item img {
+  display: none;
+}
+
+.item h4, .item p {
+  display: none;
+}
+
+.item h3 {
+  display: block;
+}
+
+.item:active, .item:hover {
+  background-color: #C2C2C2;
+}
+
+.start {
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+}
+
+/*thesis section*/
+.thesis {
+  flex-direction: column;
+}
+
+.sides, .video h3, .video p {
+  display: none;
+}
+
+  .video {
+    padding-bottom: 1.5rem;
+  }
+
+  /*footer*/
+  footer {
+    justify-content: center;
+  }
+  .terms {
+    display: none;
+  }
 }
 
 
