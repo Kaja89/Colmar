@@ -94,8 +94,7 @@ nav a:hover ,footer a:hover {
 
 /*banner*/
 .banner{
-  padding-top: rem;
-  background-color: lightgrey;
+  background-color: #D3D3D3;
   padding-top: 6rem;
   padding-bottom: 2rem;
 }
@@ -114,7 +113,7 @@ nav a:hover ,footer a:hover {
 }
 
 .button {
-  background-color: gray;
+  background-color: #808080;
   padding: 1rem 5rem;
   color: white;
   border-radius: 3px;
@@ -176,7 +175,7 @@ h3 {
 }
 
 .small:hover {
-  background-color: lightgray;
+  background-color: #D3D3D3;
   cursor: pointer;
   transition: background-color 0.4s ease-out;
 }
@@ -189,14 +188,14 @@ h3 {
   font-size: 2.5rem;
   font-weight: bold;
   padding: 2rem 0;
-  background-color: lightgray;
+  background-color: #D3D3D3;
   }
 
 .start {
   flex-wrap: wrap;
   padding: 0 4.5rem;
   justify-content: center;
-  background-color: lightgray;
+  background-color: #D3D3D3;
 }
 
 .item {
@@ -242,7 +241,6 @@ h2 {
 }
 
 .thesis {
-  box-sizing: border-box;
   width: 100%;
 }
 
@@ -267,23 +265,26 @@ footer {
 
 .terms a {
   text-decoration: none;
-  color: dimgray;
+  color: #696969;
 }
 
 @media only screen and (max-width: 860px){
 
+
+  .column {
+    flex-direction: column;
+  }
+
   /*banner*/
   .banner {
-    flex-direction: column;
     padding-top: 4rem;
   }
 
   .content-big {
-    max-width: 100%;
     margin: 0px;
   }
 
-  .banner .content-small {
+  .content-big, .banner .content-small {
     max-width: 100%;
   }
 
@@ -307,7 +308,7 @@ footer {
 
 
   /*hurt*/
-  .hurt .content-big {
+  .hurt .content-big, .desktop {
     display: none;
   }
 
@@ -316,9 +317,8 @@ footer {
   }
 
   .small {
-  flex-direction: column;
-  margin: 0;
-  max-width: 100%;
+    margin: 0;
+    max-width: 100%;
   }
 
   .small:hover {
@@ -327,14 +327,10 @@ footer {
     transition: none;
   }
 
-  .desktop {
-  display: none;
-  }
-
   .mobile-img  {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .img-container {
@@ -356,57 +352,52 @@ footer {
   .three-pictures h3 {
     margin-bottom: 1rem;
     font-size: 2rem;
+  }
 
+  .text a:active {
+    color: #e0ac04;
   }
 
 /*start learning*/
 
-.learning-section h2 {
-  background-color: white;
-}
+  .learning-section h2 {
+    background-color: white;
+  }
 
-.item {
-  margin: 0 0 0.5rem 0;
-  max-width: 100%;
-  background-color: #D3D3D3; /*lightgray*/
-  padding: 1rem 1rem;
-  border-radius: 5px;
-}
+  .item {
+    margin: 0 0 0.5rem 0;
+    max-width: 100%;
+    background-color: #D3D3D3; /*lightgray*/
+    padding: 1rem 1rem;
+    border-radius: 5px;
+  }
 
-.item:nth-child(3n + 2) {
-  margin: 0 0 0.5rem 0;
-}
+  .item:nth-child(3n + 2) {
+    margin: 0 0 0.5rem 0;
+  }
 
-.item img {
-  display: none;
-}
+  .item img, .item h4, .item p, .terms {
+    display: none;
+  }
 
-.item h4, .item p {
-  display: none;
-}
+  .item h3 {
+    display: block;
+  }
 
-.item h3 {
-  display: block;
-}
+  .item:active, .item:hover {
+    background-color: #C2C2C2;
+  }
 
-.item:active, .item:hover {
-  background-color: #C2C2C2;
-}
+  .start {
+    background-color: white;
+    padding: 1rem;
+  }
 
-.start {
-  flex-direction: column;
-  background-color: white;
-  padding: 1rem;
-}
+  /*thesis section*/
 
-/*thesis section*/
-.thesis {
-  flex-direction: column;
-}
-
-.sides, .video h3, .video p {
-  display: none;
-}
+  .sides, .video h3, .video p {
+    display: none;
+  }
 
   .video {
     padding-bottom: 1.5rem;
@@ -416,9 +407,7 @@ footer {
   footer {
     justify-content: center;
   }
-  .terms {
-    display: none;
-  }
+
 }
 
 
@@ -428,11 +417,7 @@ footer {
     font-size: 0.75rem;
   }
   /*header*/
-  .logo {
-    display: none;
-  }
-
-  nav {
+  .logo, nav {
     display: none;
   }
 
