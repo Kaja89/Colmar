@@ -48,7 +48,7 @@
           <h1>Learn something new everyday</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <div class="button">
-            <span><a href="#">Start here</a></span>
+            <span><a>Start here</a></span>
           </div>
         </div>
       </div>
@@ -159,7 +159,8 @@
       <div class ="content-big h-auto">
         <div class="video" role="complementary">
         <!--MAKE A LOOOP!!!!-->
-          <video class="h-auto max-width" src="resources/videos/thesis.mp4" loop="loop" autoplay="autoplay"> Sorry, your device doesn't support video files </video>
+          <video class="h-auto max-width" controls autobuffer> <source src="resources/videos/thesis.mp4"> loop="loop" autoplay="autoplay"> Sorry, your device doesn't support video files </video>
+
           <h3>Reimagine urban</h3>
           <p>Maecenas sed ante ex. Nulla quis lorem sit amet neque volutpat venenatis et at ligula. Suspendisse vulputate quis dui ut mollis. Duis tincidunt mauris id eros congue fermentum. Cras ut leo odio. Proin gravida augue quis metus ornare, non bibendum urna auctor. Etiam leo libero, consectetur at feugiat eu, semper non nulla. Nunc et lacus lobortis, facilisis lectus nec, tempor nisi.</p>
         </div>
@@ -197,5 +198,11 @@
       </div>
     </footer>
 
+    <script>
+      var video = document.getElementById('video');
+      video.addEventListener('click', function(){
+        video.play();
+      }, false);
+    </script>
   </body>
 </html>
